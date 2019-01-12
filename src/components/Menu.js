@@ -12,22 +12,23 @@ const Repair = styled.div`
 `;
 const WorkTime = styled.div`
   color: #464646;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 300;
   line-height: 24px;
 
   span {
     display: block;
-    color: #46464646
-    font-size: 21px
+    color: #464646;
+    font-size: 21px;
     font-weight: 500;
+   
 
   }
 `;
 
 const Calls =  styled.div`
   color: #464646;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 300;
   line-height: 24px;
 
@@ -53,7 +54,7 @@ const CallButton = styled.button`
 class Adress extends Component{
   render(){
 
-  	return (<span>{this.props.addr}</span>)
+  	return (<span>{this.props.children}</span>)
   }
 
 }
@@ -75,15 +76,15 @@ class Header extends React.Component{
                  	<Repair>Ремонт айфонов в сервисном центре и на выезде</Repair>
                  </Col>
                  <Col lg={3} lgOffset={1}>
-                   <WorkTime>Пн-пт с 10 до 20, сб,вс с 11 до 18</WorkTime>
-				   <Adress>Ленинская, 301</Adress>
+                   <WorkTime>Пн-пт с 10 до 20, сб,вс с 11 до 18
+				   <Adress>Ленинская, 301</Adress></WorkTime>
                  </Col>
                  <Col lg={3}>
 					<Calls>Звонки принимаются 24 часа</Calls>
 					<TelNumber tel="8 (846) 922 55 44" />
                  </Col>
                  <Col lg={2}>
-					<CallButton>Заказать звонок</CallButton>
+<CallButton>Заказать звонок</CallButton>
                  </Col>
                </Row>
 			)

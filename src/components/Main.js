@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const Repair = styled.div`
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   span {
      display: block;
@@ -47,7 +47,7 @@ class Main extends Component{
                  <Col lg={5}>
                  <Repair>
                  Качественный ремонт
-iphone за 35 минут и гарантия 1 год
+<span>iphone за 35 минут и гарантия 1 год</span>
                  </Repair>
 <LightText>Оставьте заявку на бесплатную диагностику без очереди,
 и получите защитное стекло, стоимостью 1000 рублей,
