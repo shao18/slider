@@ -34,7 +34,7 @@ const Calls =  styled.div`
 
   span {
     display: block;
-    color: #46464646
+    color: #464646;
     font-size: 21px
     font-weight: 500;
 
@@ -80,8 +80,9 @@ class Header extends React.Component{
 				   <Adress>Ленинская, 301</Adress></WorkTime>
                  </Col>
                  <Col lg={3}>
-					<Calls>Звонки принимаются 24 часа</Calls>
+					<Calls>Звонки принимаются 24 часа
 					<TelNumber tel="8 (846) 922 55 44" />
+					</Calls>
                  </Col>
                  <Col lg={2}>
 <CallButton>Заказать звонок</CallButton>
